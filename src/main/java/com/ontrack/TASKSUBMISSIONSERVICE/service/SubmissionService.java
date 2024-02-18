@@ -5,7 +5,7 @@ import com.ontrack.TASKSUBMISSIONSERVICE.modal.Submission;
 import java.util.List;
 
 public interface SubmissionService {
-    Submission submitTask(Long taskId,String githubLink,Long userId) throws Exception;
+    Submission submitTask(Long taskId,String githubLink,Long userId,String jwt) throws Exception;
     Submission getTaskBySubmissionId(Long submissionId) throws Exception;
     List<Submission> getAllTaskSubmissions();
     List<Submission> getTaskSubmissionsByTaskId(Long taskId);
